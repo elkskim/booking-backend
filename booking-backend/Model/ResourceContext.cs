@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using booking_backend.Model;
 
 namespace booking_backend.Model
 {
@@ -10,5 +11,7 @@ namespace booking_backend.Model
         }
 
         public DbSet<Resource> Resource { get; set; } = null!;
+
+        public DbSet<booking_backend.Model.Booking>? Booking { get; set; }
     }
 }
